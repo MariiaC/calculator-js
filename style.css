@@ -1,0 +1,108 @@
+/*скидываем точки возле списка и марджины для ul*/
+.list {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* «B1» глобальне скидання стилів <h1>...<h6>, <p>і <ul>.
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/*скидываем подчеркивания линков*/
+/* .link {
+  text-decoration: none;
+} */
+.container {
+  width: 300px;
+  height: 500px;
+  /* border: 1px solid saddlebrown; */
+  border-radius: 30px;
+  background: lightskyblue;
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 20px;
+  box-shadow: 4px 4px 4px #4f4f4f;
+  margin: 50px auto;
+}
+
+.screen {
+  height: 125px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+  border: 4px solid lightseagreen;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.buttons {
+  display: grid;
+  place-items: center;
+  grid-template-areas:
+    'ac plus-minus percent divide'
+    'seven eight nine multiply'
+    'four five six minus'
+    'one two three plus'
+    'zero zero dot equals';
+  column-gap: 5px;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  /* background: rgb(239, 239, 148); */
+  background: lightseagreen;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(120%);
+}
+.btn:active {
+  filter: brightness(90%);
+}
+
+.btn.bg-grey {
+  background: lightslategray;
+}
+
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 35px;
+}
+
+.btn.num {
+  background: rgb(239, 239, 148);
+}
