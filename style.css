@@ -8,22 +8,6 @@ ul {
   padding: 0;
 }
 
-/* «B1» глобальне скидання стилів <h1>...<h6>, <p>і <ul>.
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-/*скидываем подчеркивания линков*/
-/* .link {
-  text-decoration: none;
-} */
 .container {
   width: 300px;
   height: 500px;
@@ -41,7 +25,7 @@ li {
   margin: 50px auto;
 }
 
-.screen {
+.calc-screen {
   height: 125px;
   padding: 10px;
   display: grid;
@@ -50,7 +34,7 @@ li {
   margin-bottom: 20px;
 }
 
-.screen p {
+.calc-screen p {
   text-align: right;
   font-size: 4rem;
   margin: 0;
@@ -83,6 +67,7 @@ li {
   line-height: 50px;
   cursor: pointer;
   user-select: none;
+  box-shadow: 4px 4px 4px #4f4f4f;
 }
 
 .btn:hover,
@@ -94,7 +79,7 @@ li {
 }
 
 .btn.bg-grey {
-  background: lightslategray;
+  background: rgb(166, 180, 194);
 }
 
 .btn.zero {
