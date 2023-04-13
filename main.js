@@ -1,5 +1,5 @@
 let a = ''; //first num
-let b = ''; //decond num
+let b = ''; //second num
 let sign = ''; //operation sign
 let finish = false;
 
@@ -7,10 +7,10 @@ const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
 
 const action = ['+', '-', '/', '*'];
 
-//экран
+//screen
 const out = document.querySelector('p');
 
-//очистка
+//clear
 function clearAll() {
   a = '';
   b = '';
@@ -24,25 +24,6 @@ acBtn.addEventListener('click', () => {
   clearAll;
 });
 
-// document.querySelector('.ac').onclick = clearAll;
-
-// document.querySelector('.buttons').onclick = (event) => {
-//     if (!event.target.classList.contains('btn')) return;
-
-//     if (event.target.classList.contains('ac')) return;
-
-//    out.textContent=''
-
-//     const key = event.target.textContent;
-
-//       if (digit.includes(key)) {
-//     a += key;
-//       console.log(a, b, sign);
-
-//          out.textContent=a
-//   }
-
-// }
 
 const buttons = document.querySelector('.buttons');
 
@@ -55,10 +36,10 @@ buttons.addEventListener('click', evt => {
   }
 
   out.textContent = '';
-  // получаем нажатую кнопку
+  // we get pressed btn
   const key = evt.target.textContent;
 
-  //нажата 0-9 или .
+  //pressed 0-9 щк .
   if (digit.includes(key)) {
     if (b === '' && sign === '') {
       a += key;
@@ -77,7 +58,7 @@ buttons.addEventListener('click', evt => {
     return;
   }
 
-  //нажаты знаки
+  //pressed signs
   if (action.includes(key)) {
     sign = key;
     out.textContent = sign;
